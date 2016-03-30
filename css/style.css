@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
 .img-circle {
     display: block;
     border-radius: 50%;
@@ -8,6 +10,7 @@
 }
 
 .skills {
+  font-family: 'Raleway', sans-serif;
   margin-left: auto;
   margin-right: auto
 }
