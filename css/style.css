@@ -26,3 +26,16 @@
     margin:5px 10px;
     padding:5px;
 }
+
+.cardimgcrop {
+    background-color: black;
+    border-color: white;
+}
+
+.cardimgcrop img {
+    opacity: 0.7;
+}
+
+.cardimgcrop img:hover {
+    opacity: 1;
+}

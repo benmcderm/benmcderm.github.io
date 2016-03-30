@@ -2,12 +2,13 @@
 <html lang="en">
 <meta charset="utf-8">
 <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <link rel="stylesheet" href="/css/style.css">
   <title>Ben McDermott | Full Stack Developer</title>
 </head>
 <body class="body">
   <img class="img-circle" src="img/ben.png"></img>
-  <div class="container">
+  <div class="cardimgcrop">
     <img class="social" id="linkedin" src="img/linkedin.png"></img>
     <img class="social" id="github" src="img/github.png"></img>
   </div>
@@ -15,7 +16,12 @@
     A Full Stack developer with a focus on Javascript and Ruby on Rails.
   </p>
   <script>
-    var github = document.getElementById('linkedin')
+  $(document).delegate('.social', 'mouseover', function() {
+ $(this).fadeTo(500, 1);
+});
+$(document).delegate('.social', 'mouseout', function() {
+ $(this).fadeTo(500, 0.7);
+});
   </script>
 </body>
 </html>
